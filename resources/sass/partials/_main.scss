@@ -1,0 +1,79 @@
+
+table {
+    background-color: $color_img_prodotto;
+}
+.container-prodotto {
+    background-color: $color_img_prodotto;
+    h3 {
+        color: $color_blu_molisana;
+        background-color: $color_img_prodotto;
+        text-align: center;
+        padding: 40px;
+        font-size: 30px;
+    }
+    img {
+        width: 100vw;
+    }
+    .testo {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+            color: $color_blu_molisana;
+            background-color: $color_img_prodotto;
+    }
+}
+main {
+    background-image: url('../../img/fondo-pag-speciali.jpg');
+    .container-card {
+        h1 {
+            margin: 30px;
+        }
+        text-align: center;
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .card {
+                flex-basis: calc(80% / 3);
+                position: relative;
+                margin: 10px;
+                border-radius:10px;
+                border: 2px solid $rosso_molisana;
+                overflow: hidden;
+                &:hover {
+                    .card-hover {
+                        display: block;
+                        opacity: 0.8;
+                        svg {
+                            fill: $rosso_molisana;
+                        }
+                    }
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                }
+                .card-hover {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(- 50%, -50%);
+                    display: none;
+                    text-align: center;
+                    h3 {
+                        a {
+                            text-decoration: none;
+                            font-size: 25px;
+                            color: $rosso_molisana;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

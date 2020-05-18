@@ -1,0 +1,21 @@
+header {
+    background-color: white;
+    text-align: center;
+    .main-menu {
+        .active {
+            background-color: $color_img_prodotto;
+            border-radius: 5px;
+        }
+        list-style: none;
+        li {
+            padding: 10px 25px;
+            display: inline-block;
+            &:hover {
+                background-color: $color_img_prodotto;
+                border-radius: 5px;
+            }
+
+        }
+
+    }
+}
